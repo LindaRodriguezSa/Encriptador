@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome (ICONOS)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Title Page -->
+    <title>Encriptador de texto</title>
+  </head>
+
+  <body>
+    <main class="grid">
+      <div class="flex user padding-user">
+        <div>
+          <img class="logo" src="img/logo.png" alt="Alura" />
+          <textarea
+            class="user-text"
+            name=""
+            id=""
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+        </div>
+        <div>
+          <label for=""
+            ><span class="exclamation">&#33;</span> Solo letras minúsculas y sin
+            acentos</label
+          >
+          <div class="flex flex-button">
+            <button type="button" onclick="encrypt()" class="button-blue">
+              Encriptar
+            </button>
+            <button type="button" onclick="decrypt()" class="button-grey">
+              Descifrar
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- User Input and Buttons -->
+
+      <div class="flex translation not-found padding-result">
+        <img src="img/not-found-cat.png" alt="Not Found" />
+        <p class="bold empty">Ningún mensaje fue encontrado</p>
+        <p class="empty-legend">
+          Ingresa el texto que deseas encriptar o desencriptar.
+        </p>
+      </div>
+      
+      <!-- Traslation Not Found -->
+      <div class="flex translation text-found display-none padding-result">
+        <textarea
+          class="inputCopy"
+          name=""
+          id=""
+          placeholder="Resultado"
+          disabled
+        ></textarea>
+        <button type="button" onclick="copy()" class="button-grey">
+          Copiar
+        </button>
+      </div>
+      <!-- Result traslation -->
+    </main>
+
+    <footer>
+      <p>Made by <span class="bold">Linda Rodriguez</span></p>
+      <div class="flex icons">
+        <a target="_blank" rel="noopener" href=""
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://github.com/LindaRodriguezSa?tab=repositories"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <span>|</span>
+        <a target="_blank" rel="noopener" href=" "
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://www.facebook.com/profile.php?id=542586062"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+
+        <a target="_blank" rel="noopener" href=""
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./app.js?v=10022499"></script>
+  </body>
+</html>
