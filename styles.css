@@ -5,6 +5,9 @@ html {
     -webkit-print-color-adjust: exact;
     font-family: "Roboto", sans-serif;
   }
+  html, body {
+    min-height: 100%;
+}
   
   *,
   *::before,
@@ -217,7 +220,7 @@ html {
    
   }
   
-  @media (min-width: 1540px) {
+  @media (min-width: 1200px) {
     main {
       width: 70%;
     }
